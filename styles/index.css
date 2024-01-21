@@ -2,8 +2,6 @@ body{
     background-color: #12293A;
     background-image: url(/img/Texture\ 33.svg);
     margin: 0;
-    color: #FFFFFF;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -15,6 +13,7 @@ header{
     padding-right: 5%;
     padding-top: 25px;
 }
+
 
 .messenger a{
     padding: 0 10px 0 10px;
@@ -109,15 +108,37 @@ header{
     grid-row-end: 5;
 }
 
+.container form{
+    display: grid;
+}
+
+.quote-enter{
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 input{
+    padding: 10px;
+    margin: 20px 70px 20px 70px;
     border: 0;
     border-bottom: 2px solid;
     border-color: #FFFFFF;
     outline: 0;
     background: transparent;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-
+select {
+    padding: 10px;
+    margin: 20px 70px 20px 70px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
 
 .category{
     display: flex;
@@ -133,6 +154,10 @@ input{
 }
 
 .category a:hover {
+    background: rgba(255, 202, 108, 0.4);
+}
+
+.category a:active {
     background: rgba(255, 202, 108, 0.4);
 }
 
